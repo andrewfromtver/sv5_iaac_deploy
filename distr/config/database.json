@@ -1,0 +1,26 @@
+{
+	"environment": {
+		"redistPath": "",
+		"sourcePath": "",
+		"destinationPath": "/opt/securityvision/"
+	},
+	"features": [
+		{
+				"jType": "Postgre",
+				"account": {
+					"login": "sv5user",
+					"password": "sv5password"
+					
+				},
+				"server": {
+					"host": "localhost",
+					"dbName": "SecurityVision",
+					"port": 5432
+				}
+			},
+		{
+			"jType": "PortalDatabase"
+		}
+	],
+	"jType": "Install"
+}
