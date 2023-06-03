@@ -2,13 +2,15 @@
 # -*- mode: ruby -*-
 # vi: set ft=ruby :
 
-UBUNTU_BOX = 'generic/ubuntu2004'
-# UBUNTU_BOX = 'generic/ubuntu2204'
+# VM_BOX = 'generic/debian10'     # Debian 10
+# VM_BOX = 'generic/debian11'     # Debian 11
+# VM_BOX = 'generic/ubuntu2004'   # Ubuntu 20.04
+VM_BOX = 'generic/ubuntu2204'     # Ubuntu 22.04
 
 Vagrant.configure(2) do |config|
 
   config.vm.define "sv5database" do |sv5database|
-    sv5database.vm.box = UBUNTU_BOX
+    sv5database.vm.box = VM_BOX
     sv5database.vm.hostname = 'sv5database.test.local'
     sv5database.vm.provider "virtualbox" do |v|
       v.name = 'sv5database'
@@ -33,7 +35,7 @@ Vagrant.configure(2) do |config|
   end
 
   config.vm.define "sv5services" do |sv5services|
-    sv5services.vm.box = UBUNTU_BOX
+    sv5services.vm.box = VM_BOX
     sv5services.vm.hostname = 'sv5services.test.local'
     sv5services.vm.provider "virtualbox" do |v|
       v.name = 'sv5services'
@@ -50,7 +52,7 @@ Vagrant.configure(2) do |config|
   end
 
   config.vm.define "sv5webportal" do |sv5webportal|
-    sv5webportal.vm.box = UBUNTU_BOX
+    sv5webportal.vm.box = VM_BOX
     sv5webportal.vm.hostname = 'sv5webportal.test.local'
     sv5webportal.vm.provider "virtualbox" do |v|
       v.name = 'sv5webportal'

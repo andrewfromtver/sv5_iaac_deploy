@@ -4,11 +4,18 @@
 * Oracle VM VirtualBox
 * Vagrant by HashiCorp
 
-*SecurityVision installer (ubuntu20.04 or ubuntu22.04)*
+*SecurityVision installer*
 * redist folder (unpack and put in `distr` folder of this project)
 * installer-console.v5 (rename downloaded installer and put in `distr` folder of this project)
 
+*Supported Operating Systems*
+
+* Debian 10
+* Debian 11
+* Ubuntu 20.04
+* Ubuntu 22.04
+
 # Deployment
 
-* Uncomment one `UBUNTU_BOX` var in `Vagrantfile` to select ubuntu 20.04 or 22.04 box
+* Uncomment one `VM_BOX` var in `Vagrantfile` to select base OS for cluster
 * Start deployment with `vagrant up` command
