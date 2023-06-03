@@ -2,7 +2,8 @@
 # -*- mode: ruby -*-
 # vi: set ft=ruby :
 
-UBUNTU_BOX = 'ubuntu/focal64'
+UBUNTU_BOX = 'generic/ubuntu2004'
+# UBUNTU_BOX = 'generic/ubuntu2204'
 
 Vagrant.configure(2) do |config|
 
