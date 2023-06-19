@@ -2,10 +2,10 @@
 # -*- mode: ruby -*-
 # vi: set ft=ruby :
 
-VM_BOX = 'generic/debian10'       # Debian 10
+# VM_BOX = 'generic/debian10'       # Debian 10
 # VM_BOX = 'generic/debian11'     # Debian 11
 # VM_BOX = 'generic/ubuntu2004'   # Ubuntu 20.04
-# VM_BOX = 'generic/ubuntu2204'   # Ubuntu 22.04
+VM_BOX = 'generic/ubuntu2204'   # Ubuntu 22.04
 
 Vagrant.configure(2) do |config|
 
